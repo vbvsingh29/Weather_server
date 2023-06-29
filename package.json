@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app.js",
     "build": "npm run build:functions && npm run build:app",
-    "build:functions": "netlify-lambda build functions",
+    "build:functions": "npx netlify-lambda build functions",
     "build:app": "your-build-command-here"
   },
   "keywords": [],
@@ -17,5 +17,8 @@
     "hbs": "^4.2.0",
     "nodemon": "^1.18.5",
     "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "netlify-lambda": "^2.0.16"
   }
 }
