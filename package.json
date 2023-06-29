@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm install",
-    "start": "node src/app.js"
+    "start": "node app.js",
+    "build": "npm run build:functions && npm run build:app",
+    "build:functions": "netlify-lambda build functions",
+    "build:app": "your-build-command-here"
   },
-  
   "keywords": [],
   "author": "",
   "license": "ISC",
