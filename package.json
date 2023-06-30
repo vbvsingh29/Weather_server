@@ -4,10 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
-    "build": "npm run build:functions && npm run build:app",
-    "build:functions": "npx netlify-lambda build functions",
-    "build:app": "your-build-command-here"
+    "start": "node src/app.js"
   },
   "keywords": [],
   "author": "",
